@@ -114,9 +114,9 @@ analytics:
 # Site Author
 author:
   name             : "Patrick Tung"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/patrick-tung.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "A cybersecurity guy."
-  location         : "Somewhere"
+  location         : #"Somewhere"
   email            :
   links:
     - label: "Email"
