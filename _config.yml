@@ -21,7 +21,7 @@ title                    : "Blog - Patrick Tung"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Patrick Tung"
-description              : "A cybersecurity blog."
+description              : "Keep learning and building stuff in cybersecurity."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Patrick Tung"
   avatar           : "/assets/images/patrick-tung.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A cybersecurity guy."
+  bio              : "Keep learning and building stuff in cybersecurity."
   location         : #"Somewhere"
   email            :
   links:

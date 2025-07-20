@@ -6,5 +6,4 @@ author_profile: true
 ---
 
 ---
-
-I am...
+I am Patrick. This blog is to keep track of my learning and work during free time. Readers are always to feel free to learn something useful from this blog!
