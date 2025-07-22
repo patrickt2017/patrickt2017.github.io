@@ -47,7 +47,7 @@ In the revised PE file, the import directory table no longer contains the malici
 
 ## Obfuscation / Encoding / Encryptions
 
-The idea behind is also easy to understand - obfuscate/decode/encrypt the malicious string into a form that EDR could not understand and determine the process is illegal.
+The idea behind is also easy to understand - obfuscate/encode/encrypt the malicious string into a form that EDR could not understand and determine the process is illegal.
 
 Before obfuscation, the output is stored in plaintext and EDR could identify this is from Rubeus tool by pattern matching.
 ![](/assets/images/2025-07-20-Evading-EDR-Memory-Scanning-2.png)
