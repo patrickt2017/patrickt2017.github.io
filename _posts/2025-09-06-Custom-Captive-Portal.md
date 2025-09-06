@@ -12,17 +12,11 @@ show_date: true
 # Introduction
 During a Wi-Fi penetration test recently, I tried to explore further about Evil Twin attacks, which is one of the client-side attacks. To whom may not know much about this attack, Evil Twin attacks involve adversaries who attempt to mimic a target Wi-Fi access point with a rogue acccess point and to trick users to connect the fake one.
 
-
-# Airgeddon
-
-![](/assets/images/2025-09-06-01.png)
-
-# Custom Portal Plugin
+# Custom Portal Plugin in Arigeddon
 
 ## Installation
 
-https://github.com/KeyofBlueS/airgeddon-plugins
-
+Download the script `customportals.sh` on [](https://github.com/KeyofBlueS/airgeddon-plugins) and put it in `/usr/share/airgeddon/plguins`. Also, create a folder called `custom_portals` which will store all your customized captive portal template.
 
 ```sh
 ┌──(root㉿kali)-[/usr/share/airgeddon/plugins]
