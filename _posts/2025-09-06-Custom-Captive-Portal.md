@@ -16,7 +16,7 @@ During a Wi-Fi penetration test recently, I tried to explore further about Evil 
 
 ## Installation
 
-Download the script `customportals.sh` on [](https://github.com/KeyofBlueS/airgeddon-plugins) and put it in `/usr/share/airgeddon/plguins`. Also, create a folder called `custom_portals` which will store all your customized captive portal template.
+Download the script `customportals.sh` on [https://github.com/KeyofBlueS/airgeddon-plugins](https://github.com/KeyofBlueS/airgeddon-plugins) and put it in `/usr/share/airgeddon/plguins`. Also, create a folder called `custom_portals` which will store all your customized captive portal template.
 
 ```sh
 ┌──(root㉿kali)-[/usr/share/airgeddon/plugins]
@@ -174,6 +174,10 @@ After the handshake capture file with deauthentication has been obtained, a rogu
 
 
 ![](/assets/images/2025-09-06-03.png)
+
+# Captive Portal Sample
+
+You may refer to my sample on [https://github.com/patrickt2017/Airgeddon-Evil-Twin-Captive-Portal-Demo](https://github.com/patrickt2017/Airgeddon-Evil-Twin-Captive-Portal-Demo) and develop your own template further!
 
 # Resources
 
