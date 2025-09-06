@@ -12,6 +12,8 @@ main:
   #   url: /sitemap/
   - title: "EDR Evasion"
     url: /categories/edr-evasion/
+  - title: "Penetration Test"
+    url: /categories/pentest/
   - title: "Categories"
     url: /categories/
 #  - title: "Tags"
