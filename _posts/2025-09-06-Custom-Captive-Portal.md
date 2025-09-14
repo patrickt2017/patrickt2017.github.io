@@ -1,12 +1,13 @@
 ---
 title: "Customize your Captive Portal in Airgeddon's Evil Twin Attack"
+excerpt: "A summarized walkthrough to custom the captive portal in Wi-Fi Evil Twin attacks."
 categories:
-    - Penetration Test
-    - Wi-Fi
+    - Penetration-Test
+tags:
+    - Penetration-Test
 toc: true
-toc_label: "Table of Contents"
-toc_sticky: true
 show_date: true
+classes: wide
 ---
 
 # Introduction

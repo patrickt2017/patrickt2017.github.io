@@ -1,12 +1,13 @@
 ---
 title: "Tactics for Evading Static PE and Memory-Based Detection"
+excerpt: "A quick sharing of simple ways to evade statfic PE and memory scanning."
 categories:
-    - Red Team
-    - EDR Evasion
+    - EDR-Evasion
+tags:
+    - EDR-Evasion
 toc: true
-toc_label: "Table of Contents"
-toc_sticky: true
 show_date: true
+classes: wide
 ---
 
 # Introduction
