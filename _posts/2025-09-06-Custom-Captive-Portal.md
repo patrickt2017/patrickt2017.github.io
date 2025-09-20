@@ -170,10 +170,10 @@ drwxr-xr-x 3 root root  4096 Sep  5 23:46 ..
 
 After the handshake capture file with deauthentication has been obtained, a rogue AP will be established with the captive portal.
 
-![](/assets/images/2025-09-06-02.png)
+![](/assets/images/2025-09-06/2025-09-06-02.png)
 
 
-![](/assets/images/2025-09-06-03.png)
+![](/assets/images/2025-09-06/2025-09-06-03.png)
 
 # Captive Portal Sample
 

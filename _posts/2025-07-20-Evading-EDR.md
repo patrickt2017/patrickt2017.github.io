@@ -27,12 +27,12 @@ _The definition of CLRCreateInstance_
 
 When the header and the library are included in the loader, the import directory table of its Portable Executable (PE) file would include the `mscoree.dll` DLL and the entry of `CLRCreateInstance`. EDR could treat this as malicious file by static analysis of the PE file and its import directory table.
 
-![](/assets/images/2025-07-20-Evading-EDR-PE.png)
+![](/assets/images/2025-07-20/2025-07-20-Evading-EDR-PE.png)
 
 ## Assembly Output Content Detected by Memory Scanning
 The output of the .NET assembly is stored in a buffer in cleartext. If EDR performs in-memory scanning of the loader process, it could identify any malicious string of the .NET assembly output.
 
-![](/assets/images/2025-07-20-Evading-EDR-Memory-Scanning.png)
+![](/assets/images/2025-07-20/2025-07-20-Evading-EDR-Memory-Scanning.png)
 
 # Solutions
 ## Loading Functions in Runtime
@@ -44,17 +44,17 @@ fnCLRCreateInstance CLRCreateInstance = (fnCLRCreateInstance)GetProcAddress(Load
 ```
 
 In the revised PE file, the import directory table no longer contains the malicious library and function.
-![](/assets/images/2025-07-20-Evading-EDR-PE-2.png)
+![](/assets/images/2025-07-20/2025-07-20-Evading-EDR-PE-2.png)
 
 ## Obfuscation / Encoding / Encryptions
 
 The idea behind is also easy to understand - obfuscate/encode/encrypt the malicious string into a form that EDR could not understand and determine the process is illegal.
 
 Before obfuscation, the output is stored in plaintext and EDR could identify this is from Rubeus tool by pattern matching.
-![](/assets/images/2025-07-20-Evading-EDR-Memory-Scanning-2.png)
+![](/assets/images/2025-07-20/2025-07-20-Evading-EDR-Memory-Scanning-2.png)
 
 After obfuscation, it is much difficult to know the meaning of the obfuscated content below.
-![](/assets/images/2025-07-20-Evading-EDR-Memory-Scanning-3.png)
+![](/assets/images/2025-07-20/2025-07-20-Evading-EDR-Memory-Scanning-3.png)
 
 # Conclusion
 
