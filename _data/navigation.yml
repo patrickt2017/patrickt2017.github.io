@@ -14,6 +14,8 @@ main:
     url: /categories/edr-evasion/
   - title: "Penetration Test"
     url: /categories/penetration-test/
+  - title: "Red Team"
+    url: /categories/red-team/
   - title: "Categories"
     url: /categories/
 #  - title: "Tags"
