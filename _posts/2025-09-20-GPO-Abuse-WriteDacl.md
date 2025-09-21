@@ -31,7 +31,7 @@ Use the function `Add-DomainObjectAcl` in the PowerView tool to grant the user `
 Add-DomainObjectAcl -TargetIdentity "Vuln Policy" -PrincipalIdentity "home\labuser01" -Rights All
 ```
 
-# Prerequisite: Group Policy Template in SYSVOL Share
+# Knowledge: Group Policy Template in SYSVOL Share
 
 Theoretically, if a user has been delegated GenericAll over a GPO via the **Group Policy Management** editor, they would obtain full permission of the respective group policy folder in the `SYSVOL` SMB share of the domain controllers. The folder contains all the **Group Policy Template** files, which include all the settings to apply to the linked user or computer objects.
 
