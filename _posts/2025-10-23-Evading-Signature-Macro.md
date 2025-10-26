@@ -16,8 +16,6 @@ Phishing with macro attachments remains a popular technique for establishing com
 
 In this blog, I will document some techniques I use to evade signature-based detection in VBA macros, particularly focusing on shellcode runners.
 
----
-
 # Figuring Out the Common Issues
 
 To understand the challenges, I used the VBA template from [OffensiveVBA](https://github.com/S3cur3Th1sSh1t/OffensiveVBA/blob/main/src/Shellcode_CreateThread.vba) as an example. During testing, I identified two primary issues that lead to detection by EDRs.
@@ -48,8 +46,6 @@ For Rxsqoxe = LBound(Kqrfipip) To UBound(Kqrfipip)
 Next Rxsqoxe
 ```
 
----
-
 # Useful Techniques for Evasion
 
 To bypass these detections, I applied the following techniques:
@@ -78,8 +74,6 @@ Decryption: P = C - K
 
 By combining XOR and Caesar Cipher, I was able to evade detection on a testing EDR. While I won't share the exact implementation, I recommend experimenting with other encoding techniques, such as **rot13** or **base64**, to further obfuscate the shellcode.
 
----
-
 ## 2. WinAPI Declaration with Alias
 
 Another effective technique is to rename WinAPI functions using the `Alias` keyword in the declaration. This helps avoid detection based on known API names.
@@ -97,8 +91,6 @@ Next Rxsqoxe
 ```
 
 This simple change can help bypass signature-based detection that looks for specific API names.
-
----
 
 # Conclusion
 
