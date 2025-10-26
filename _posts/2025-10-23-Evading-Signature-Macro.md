@@ -22,7 +22,7 @@ In this blog, I will document some techniques I use to evade signature-based det
 
 To understand the challenges, I used the VBA template from [OffensiveVBA](https://github.com/S3cur3Th1sSh1t/OffensiveVBA/blob/main/src/Shellcode_CreateThread.vba) as an example. During testing, I identified two primary issues that lead to detection by EDRs.
 
-### 1. **Raw Shellcode**
+### 1. Raw Shellcode
 
 Embedding raw shellcode directly in the script is a red flag for EDRs. For example, a simple array containing shellcode bytes will likely trigger detection:
 
@@ -30,7 +30,7 @@ Embedding raw shellcode directly in the script is a red flag for EDRs. For examp
 Kqrfipip = Array(232, 130, 0, 0, 0, 96, 137, 229, 49, 192, ..., 46, 101, 120, 101, 0)
 ```
 
-### 2. **WinAPI Usage**
+### 2. WinAPI Usage
 
 A typical shellcode execution workflow involves the following WinAPI functions:
 1. **VirtualAlloc**: Allocates memory with specific protection.
@@ -54,7 +54,7 @@ Next Rxsqoxe
 
 To bypass these detections, I applied the following techniques:
 
-## 1. **Multiple Encoding**
+## 1. Multiple Encoding
 
 Encoding the shellcode is a common technique to prevent EDRs from identifying malicious payloads. In the OSEP course, XOR encoding was introduced as a simple yet effective method. Here's an example of XOR encoding in VBA:
 
@@ -80,7 +80,7 @@ By combining XOR and Caesar Cipher, I was able to evade detection on a testing E
 
 ---
 
-## 2. **WinAPI Declaration with Alias**
+## 2. WinAPI Declaration with Alias
 
 Another effective technique is to rename WinAPI functions using the `Alias` keyword in the declaration. This helps avoid detection based on known API names.
 
